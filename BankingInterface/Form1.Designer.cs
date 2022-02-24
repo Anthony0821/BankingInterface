@@ -42,7 +42,7 @@ namespace BankingInterface
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.SearchBox = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.exitBtn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.ProfileLabel = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -179,7 +179,6 @@ namespace BankingInterface
             this.label1.Size = new System.Drawing.Size(165, 15);
             this.label1.TabIndex = 2;
             this.label1.Text = "Wednesday, February 16, 2022";
-            
             // 
             // User
             // 
@@ -225,17 +224,18 @@ namespace BankingInterface
             this.SearchBox.Text = "Can I help you find something?";
             this.SearchBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button1
+            // exitBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkRed;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button1.Location = new System.Drawing.Point(1365, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(27, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = false;
+            this.exitBtn.BackColor = System.Drawing.Color.DarkRed;
+            this.exitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exitBtn.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.exitBtn.Location = new System.Drawing.Point(1365, 0);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(27, 23);
+            this.exitBtn.TabIndex = 3;
+            this.exitBtn.Text = "X";
+            this.exitBtn.UseVisualStyleBackColor = false;
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // panel3
             // 
@@ -355,7 +355,7 @@ namespace BankingInterface
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.SearchBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
@@ -397,7 +397,7 @@ namespace BankingInterface
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox SearchBox;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button exitBtn;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;

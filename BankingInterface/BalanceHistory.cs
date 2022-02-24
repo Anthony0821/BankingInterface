@@ -4,9 +4,9 @@ using System.Text;
 
 namespace BankingInterface
 {
-    class BalanceHistory
+    class BalanceHistory : User
     {
-        private static int currentBalance;
+        private static double currentBalance;
 
         public static double getCurrentBalance()
         {
@@ -14,7 +14,7 @@ namespace BankingInterface
         }
         public static void depositCheck(double amount)
         {
-
+            currentBalance += amount;
         }
     }
 }

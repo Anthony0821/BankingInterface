@@ -9,7 +9,7 @@ namespace BankingInterface
     static class Program
     {
         /// <summary>
-        ///  The main entry point for the application.
+        ///  The purpose of the form is to create a GUI for a bank to view account balance and basic banking information
         /// </summary>
         [STAThread]
         static void Main()
